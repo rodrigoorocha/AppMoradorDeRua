@@ -1,8 +1,11 @@
 package testes;
 
+import java.util.Scanner;
+
 import negocio.Habilidade;
 import negocio.Localizacao;
 import negocio.Mendigo;
+import negocio.Servico;
 
 public class Testemendigo {
 	public static void main(String[] args) {
@@ -17,14 +20,23 @@ public class Testemendigo {
 		l.setBairro("centro");
 		l.setRua("sao jose");
 		
+		System.out.println("horas trabalhadas :");
+		Scanner teclado =  new Scanner(System.in); 
+		
+		Servico s = new Servico();
+		s.setHoras_trabalhadas(teclado.nextDouble());
+		
 		Mendigo m = new Mendigo ();
 		m.setNome("ze");
 		m.setMasculino(true);
 		m.setIdade(43);
 		m.setHabilidade(h);
 		m.setLocalizacao(l);
+		m.setServico(s);
 		m.divulgar();
 		
+		
+
 		
 	}
 

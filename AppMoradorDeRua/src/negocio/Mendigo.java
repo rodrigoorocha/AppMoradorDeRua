@@ -6,12 +6,12 @@ public class Mendigo {
 	private boolean masculino;
 	private Localizacao localizacao;
 	private Habilidade habilidade;
-	
+	private Servico servico;
 	
 	
 	public void divulgar() {
 		System.out.printf("mendigo :: nome: %s - idade: %d - "
-				+ "  - genero %s \n",
+				+ "  - masculino %s \n",
 				nome,
 				idade,
 				masculino ? "Verdadeiro" : "Falso"
@@ -20,8 +20,8 @@ public class Mendigo {
 				);
 		localizacao.divulgar();
 		habilidade.divulgar();
+		servico.divulgar();
 	}
-
 
 
 	public String getNome() {
@@ -29,11 +29,9 @@ public class Mendigo {
 	}
 
 
-
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
 
 
 	public int getIdade() {
@@ -41,11 +39,9 @@ public class Mendigo {
 	}
 
 
-
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
-
 
 
 	public boolean isMasculino() {
@@ -53,11 +49,9 @@ public class Mendigo {
 	}
 
 
-
 	public void setMasculino(boolean masculino) {
 		this.masculino = masculino;
 	}
-
 
 
 	public Localizacao getLocalizacao() {
@@ -65,11 +59,9 @@ public class Mendigo {
 	}
 
 
-
 	public void setLocalizacao(Localizacao localizacao) {
 		this.localizacao = localizacao;
 	}
-
 
 
 	public Habilidade getHabilidade() {
@@ -77,9 +69,21 @@ public class Mendigo {
 	}
 
 
-
 	public void setHabilidade(Habilidade habilidade) {
 		this.habilidade = habilidade;
 	}
-	
+
+
+	public Servico getServico() {
+		return servico;
+	}
+
+
+	public void setServico(Servico servico) {
+		this.servico = servico;
+	}
 }
+
+
+
+	
