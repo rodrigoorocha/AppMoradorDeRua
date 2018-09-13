@@ -3,24 +3,35 @@ package negocio;
 public class Mendigo {
 	private String nome;
 	private int idade;
+	private String[] moradores;
 	private boolean masculino;
 	private Localizacao localizacao;
 	private Habilidade habilidade;
 	private Servico servico;
 	
 	
+	
 	public void divulgar() {
 		System.out.printf("mendigo :: nome: %s - idade: %d - "
-				+ "  - masculino %s \n",
+				+ "   masculino: %s \n",
 				nome,
 				idade,
 				masculino ? "Verdadeiro" : "Falso"
-				
-					
 				);
+		
+		
+		for (String m : moradores) {
+			System.out.println("-----morador-----");
+			
+			System.out.println(m);
+			
+		}
+			
+		
 		localizacao.divulgar();
 		habilidade.divulgar();
 		servico.divulgar();
+		
 	}
 
 
@@ -76,6 +87,16 @@ public class Mendigo {
 
 	public Servico getServico() {
 		return servico;
+	}
+
+
+	public String[] getMoradores() {
+		return moradores;
+	}
+
+
+	public void setMoradores(String[] moradores) {
+		this.moradores = moradores;
 	}
 
 

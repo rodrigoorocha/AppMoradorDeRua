@@ -26,6 +26,8 @@ public class Testemendigo {
 		Servico s = new Servico();
 		s.setHoras_trabalhadas(teclado.nextDouble());
 		
+		String[] moradores = {"ze" ,"jao", "kleber"};
+		
 		Mendigo m = new Mendigo ();
 		m.setNome("ze");
 		m.setMasculino(true);
@@ -33,7 +35,9 @@ public class Testemendigo {
 		m.setHabilidade(h);
 		m.setLocalizacao(l);
 		m.setServico(s);
+		m.setMoradores (moradores);
 		m.divulgar();
+		
 		
 		
 

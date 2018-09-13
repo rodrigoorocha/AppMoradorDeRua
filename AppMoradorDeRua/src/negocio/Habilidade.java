@@ -8,7 +8,7 @@ public class Habilidade {
 	
 	public void divulgar() {
 		System.out.printf("habilidade :: EnsinoFundamental: %s - :EnsinoMedio %s - "
-				+ "- tecnico %s \n",
+				+ "- tecnico: %s \n",
 				EnsinoFundamental,
 				EnsinoMedio,
 				tecnico

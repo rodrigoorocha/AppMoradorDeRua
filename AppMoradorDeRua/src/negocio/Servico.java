@@ -18,7 +18,7 @@ public class Servico {
 	}
 
 	public void divulgar() {
-		System.out.printf("serviço ::valor padrao : %f \n",
+		System.out.printf("serviço :: valor padrao : %f \n",
 				CacularValorPadrao()
 
 				);

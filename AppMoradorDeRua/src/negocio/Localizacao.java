@@ -8,7 +8,7 @@ public class Localizacao {
 	
 	public void divulgar() {
 		System.out.printf("localizaçao :: cidade: %s - bairro: %s - "
-				+ "  - rua %s \n",
+				+ "   rua :%s \n",
 				cidade,
 				bairro,
 				rua
